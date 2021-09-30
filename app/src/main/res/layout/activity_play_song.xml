@@ -8,28 +8,29 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="285dp"
+        android:layout_height="268dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.13"
-        app:srcCompat="@drawable/musicicon" />
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/newmusicimg" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="TextView"
-        android:marqueeRepeatLimit="marquee_forever"
         android:ellipsize="marquee"
-        android:scrollHorizontally="true"
         android:fadingEdge="horizontal"
-        android:textColor="#600575"
+        android:fontFamily="sans-serif-medium"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
         android:singleLine="true"
+        android:text="TextView"
+        android:textColor="#0A7495"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,9 +41,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="340dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="320dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="115dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,13 +76,14 @@
 
     <SeekBar
         android:id="@+id/seekBar"
-        android:layout_width="366dp"
-        android:layout_height="23dp"
+        android:layout_width="339dp"
+        android:layout_height="25dp"
         android:layout_marginTop="40dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.269" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
